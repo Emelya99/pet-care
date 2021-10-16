@@ -1,0 +1,61 @@
+html,
+body {
+	height: 100%;
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+body{
+	font-family: $open-sans-font;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 400;
+	color: $text-color;
+}
+
+a{
+	display: inline-block;
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: $orange-color;
+	fill: $orange-color;;
+	transition: all .5s;
+	text-align: center;
+	&:hover{
+		fill: $acess-color;
+		color: $acess-color;
+	}
+}
+
+img{
+	object-fit: cover;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.container-fluid{
+	max-width: 100%;
+	margin: 0 auto;
+}

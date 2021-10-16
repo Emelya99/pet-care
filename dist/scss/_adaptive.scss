@@ -1,0 +1,312 @@
+@media(max-width:1650px){
+    .slider__content-info {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:1440px){
+    .slider__content-comment {
+        padding-right: 0%;
+    }
+}
+
+@media(max-width:1210px){
+    .help__content{
+        justify-content: center;
+    }
+    .footer{
+        &__content{
+            width: 33.33%;
+            margin: 0;
+        }
+        &__info{
+            padding: 0 20px;
+            margin: 0 0 0 auto;
+        }
+        &__subscribe{
+            width: 33.33%;
+        }
+    }
+}
+
+@media(max-width:$tablet){
+    .help{
+        &__box{
+            min-width: auto;
+            padding: 0 20px;
+            &-img{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .philosophy{
+        &__wrapper{
+            align-items: flex-start;
+        }
+        &__text{
+            margin-bottom: 30px;
+        }
+    }
+    .what-we-do{
+        &__wrapper{
+            align-items: flex-start;
+        }
+        &__box{
+            &-title{
+                margin-bottom: 5px;
+            }
+            &-text{
+                font-size: 16px;
+            }
+        }
+    }
+    .slider{ 
+        &__content{
+            &-box{
+                padding: 60px 20px;
+            }
+        }
+    }
+    .wards{
+        &__box{
+            width: 50%;
+            &-img{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .footer{
+        padding-top: 90px;
+        &__wrapper{
+            margin-bottom: 90px;
+        }
+        &__content{
+            width: 50%;
+            padding-right: 20px;
+            &-link{
+                margin-bottom: 30px;
+            }
+            &-text{
+                margin-bottom: 30px;
+            }
+        }
+        &__info{
+            padding: 0px 0px 0px 20px;
+            margin: 0 auto 0 0;
+            &-title{
+                margin-bottom: 15px;
+            }
+            &-text{
+                margin-bottom: 30px;
+            }
+        }
+        &__subscribe{
+            margin-top: 60px;
+            width: 100%;
+            &-title{
+                margin-bottom: 15px;
+            }
+        }
+        &__form{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media(max-width:860px){
+    .header{
+        &__menu{
+            &-btn{
+                display: block;
+            }
+        }
+        .header__items{
+            transform: translateX(-150%);
+            transition: all .5s;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: $invert-text-color;
+            margin-top: 88px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            &.active{
+                transform: translateX(0);
+            }
+        }
+        &__item{
+            padding: 15px;
+            font-size: 24px;
+            line-height: 24px;
+        }
+        &__item+&__item{
+            margin-left: 0px;
+        }
+    }
+
+}
+
+@media(max-width:$mobile){
+    .help{
+        &__box{
+            margin-top: 30px;
+        }
+    }
+    .philosophy{
+        &__content{
+            max-width: 100%;
+            order: 2;
+        }
+        &__img{
+            order: 1;
+            margin-bottom: 30px;
+        }
+        &__subtitle{
+            margin-bottom: 20px;
+        }
+        &__title{
+            margin-bottom: 20px;
+        }
+    }
+    .what-we-do{
+        &__img{
+            margin-bottom: 30px;
+        }
+        &__subtitle{
+            margin-bottom: 20px;
+        }
+        &__title{
+            margin-bottom: 30px;
+        }
+        &__content{
+            max-width: 100%;
+        }
+        &__box{
+            padding-left: 55px;
+            &::after{
+                width: 40px;
+                height: 40px;
+            }
+            &+.what-we-do__box{
+                margin-top: 30px;
+            }
+        }
+    }
+    .pet{
+        background-position: center left;
+    }
+    .slider{
+        &__body{
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__content{
+            width: 100%;
+            &-box{
+                max-width: 100%;
+            }
+            &-info{
+                font-size: 16px;
+            }
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+    .need-us{
+        &__text{
+            margin-bottom: 30px;
+            & br{
+                display: none;
+            }
+        }
+    }
+    .footer{
+        padding: 60px 0px 30px 0px;
+        &__wrapper{
+            margin-bottom: 60px;
+        }
+        &__content{
+            padding: 0;
+            width: 100%;
+        }
+        &__info{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin-top: 60px;
+        }
+        &__form{
+            &-input{
+                padding: 17px 71px 16px 20px;
+            }
+            &-button{
+                right: 16px;
+            }
+        }
+    }
+}
+
+@media(max-width:580px){
+    .wards{
+        &__wrapper{
+            margin: 0;
+        }
+        &__box{
+            margin-top: 40px;
+            padding: 0;
+            width: 100%;
+            &-img{
+                margin-bottom: 15px;
+            }
+        }
+        &__title{
+            margin: 0;
+        }
+    }
+    .need-us{
+        &__btn{
+            width: 100%;
+            &-donate{
+                margin: 0px 0px 15px 0px;
+            }
+            &-adopt{
+                margin: 0;
+            }
+        }
+    }
+    .header{
+        &__btn{
+            margin-left: 30px;
+        }
+    }
+}
+
+@media(max-width:440px){
+    .pet,
+    .welcome{
+        &__btns{
+            flex-direction: column;
+        }
+        &__btn-donate{
+            margin: 0px 0px 15px 0px;
+        }
+        &__text{
+            margin-bottom: 30px;
+        }
+    }
+    .header{
+        padding: 20px 0;
+        &__btn{
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+    }
+}

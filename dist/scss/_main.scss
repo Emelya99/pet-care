@@ -1,0 +1,636 @@
+.header{
+    padding: 14px 0;
+
+    &__wrapper{
+        @extend %flex-between;
+    }
+
+    &__menu{
+        margin-left: auto;
+        &-btn{
+            display: none;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: inherit;
+            cursor: pointer;
+            position: relative;
+            z-index: 20;
+            & span{
+                display: block;
+                height: 3px;
+                background-color: $acess-color;
+                position: relative;
+                &::before,
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 30px;
+                    height: 3px;
+                    background-color: $acess-color;
+                    left: 0;
+                }
+                &::before{
+                    top: -10px;
+                }
+                &::after{
+                    top: 10px;
+                }
+            }
+        }
+    }
+
+    &__items{
+        display: flex;
+    }
+
+    &__item+&__item{
+        margin-left: 25px;
+    }
+
+    &__link{
+        color: $acess-color;
+        font-weight: 400;
+        line-height: 22px;
+        &:hover{
+            color: $orange-color;
+        }
+    }
+
+    &__btn{
+        color: $invert-text-color;
+        background: $acess-color;
+        border-radius: 10px;
+        padding: 17px 38px 21px;
+        margin-left: 40px;
+        &:hover{
+            color: $invert-text-color;
+            background: #1A8D7A;
+        }
+    }
+}
+
+
+
+.pet,
+.welcome{
+    background-image: url(/img/welcome-bg.jpg);
+    @extend %section-big;
+
+    &__wrapper{
+       max-width: 585px;
+       display: flex;
+       flex-direction: column
+    }
+
+    &__subtitle{
+        @extend %sub-title;
+        color: $invert-text-color;
+        margin-bottom: 30px;
+    }
+
+    &__title{
+        @extend %h1-title;
+        margin-bottom: 28px;
+    }
+
+    &__text{
+        color: $invert-text-color;
+        max-width: 500px;
+        margin-bottom: 53px;
+    }
+
+    &__btns{
+        display: flex;
+    }
+
+    &__btn-donate{
+        @extend %btn-orange;
+        margin-right: 22px;
+    }
+
+    &__btn-adopt{
+        @extend %btn-white;
+    }
+}
+
+
+
+.help{
+    @extend %section-default;
+    background-color: $acess-color;
+    color: $invert-text-color;
+    text-align: center;
+
+    &__wrapper{
+        @extend %flex-center;
+    }
+
+    &__subtitle{
+        @extend %sub-title;
+        margin-bottom: 25px;
+    }
+
+    &__title{
+        @extend %h2-title;
+        margin-bottom: 29px;
+        color: $invert-text-color;
+    }
+
+    &__text{
+        max-width: 620px;
+    }
+
+    &__content{
+        @extend %flex-wrap;
+        width: 100%;
+    }
+
+    &__box{
+        @extend %flex-center;
+        min-width: 200px;
+        margin-top: 44px;
+        &-img{
+            margin-bottom: 29px;
+        }
+        &-title{
+            @extend %h3-title;
+            color: $invert-text-color;
+        }
+    }
+}
+
+
+
+.philosophy{
+    @extend %section-default;
+    background-color: #F6FBFE;
+
+    &__wrapper{
+        @extend %flex-between;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+
+    &__content{
+        max-width: 550px;
+        @extend %content-50;
+    }
+
+    &__img{
+        @extend %content-50;
+    }
+
+    &__subtitle{
+        @extend %sub-title;
+        margin-bottom: 25px;
+    }
+
+    &__title{
+        @extend %h2-title;
+        margin-bottom: 29px;
+    }
+
+    &__text{
+        margin-bottom: 49px;
+    }
+
+    &__btn-arrow{
+        margin-left: 4px;
+    }
+}
+
+
+
+.what-we-do{
+    @extend %section-default;
+
+    &__wrapper{
+        @extend %flex-between;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+
+    &__img{
+        @extend %content-50;
+    }
+
+    &__content{
+        @extend %content-50;
+        max-width: 550px;
+    }
+
+    &__subtitle{
+        @extend %sub-title;
+        margin-bottom: 26px;
+    }
+
+    &__title{
+        @extend %h2-title;
+        margin-bottom: 40px;
+    }
+
+    &__box{
+        padding-left: 80px;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 0;
+            left: 0;
+            background-image: url("/img/what-we-do-check.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &+.what-we-do__box{
+            margin-top: 35px;
+        }
+
+        &-title{
+            @extend %h3-title;
+            margin-bottom: 14px;
+        }
+    }
+}
+
+
+
+.pet{
+    background-image: url("/img/help-bg.jpg");
+
+    &__wrapper{
+        max-width: 650px;
+    }
+
+    &__subtitle{
+        color: $orange-color;
+        margin-bottom: 16px;
+    }
+
+    &__title{
+        margin-bottom: 30px;
+    }
+
+    &__text{
+        margin-bottom: 63px;
+    }
+}
+
+
+
+.wards{
+    @extend %section-default;
+    text-align: center;
+    display: flex;
+
+    &__subtitle{
+        @extend %sub-title;
+        margin-bottom: 27px;
+    }
+
+    &__title{
+        @extend %h2-title;
+        margin-bottom: 40px;
+    }
+
+    &__wrapper{
+        @extend %flex-wrap;
+        margin: 0px -20px -43px -20px;
+    }
+
+    &__box{
+        width: 330px;
+        padding: 0px 20px 43px 20px;
+        &-img{
+            margin-bottom: 31px;
+        }
+        &-title{
+            @extend %h3-title;
+            margin-bottom: 13px;
+        }
+        &-text{
+            margin-bottom: 18px;
+        }
+        &-btn{
+            font-size: 16px;
+            line-height: 19px;
+            &-arrow{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+
+
+.slider{
+    background: #F6FBFE;
+
+    &__wrapper{
+        position: relative;
+    }
+
+    &__body{
+        display: flex;
+    }
+
+    &__content{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &-box{
+            max-width: 660px;
+            padding: 30px 20px;
+        }
+
+        &-icon{
+            margin-bottom: 33px;
+        }
+
+        &-comment{
+            @extend %h2-title;
+            padding-right: 16%;
+            margin-bottom: 31px;
+        }
+
+        &-info{
+            margin-bottom: 100px;
+        }
+    }
+
+    &__img{
+        width: 50%;
+    }
+
+    &-arrow{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: inherit;
+        border: 2px solid $text-color;
+        transition: all .5s;
+
+        & svg{
+            fill: $text-color;
+        }
+
+        &:hover{
+            background: $acess-color;
+            border: 2px solid $acess-color;
+
+            & svg{
+                fill: $invert-text-color;
+            }
+        }
+    }
+
+    &-next{
+        margin-left: 5px;
+    }
+    .slick-track {
+        display: flex;
+        & .slick-slide{
+            display: flex;
+            height: auto;
+        }
+    }
+}
+
+.need-us{
+    background-image: url(/img/need-us-bg.jpg);
+    @extend %section-big;
+
+    &__wrapper{
+        color: $invert-text-color;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    &__subtitle{
+        @extend %sub-title;
+        color: $invert-text-color;
+        margin-bottom: 29px;
+    }
+    
+    &__title{
+        @extend %h1-title;
+        margin-bottom: 30px;
+    }
+
+    &__text{
+        max-width: 600px;
+        margin-bottom: 52px;
+    }
+
+    &__btn{
+        &-donate{
+            @extend %btn-orange;
+            margin: 0 10px;
+        }
+        &-adopt{
+            @extend %btn-white;
+            margin: 0 10px;
+        }
+    }
+}
+
+
+
+.footer{
+    background: $acess-color;
+    padding: 118px 0px 25px 0px;
+
+    &__wrapper{
+        @extend %flex-wrap;
+        margin-bottom: 109px;
+    }
+
+    &__content{
+        width: 390px;
+        margin-right: 20px;
+        &-link{
+            margin-bottom: 44px;
+        }
+        &-text{
+            color: $invert-text-color;
+            margin-bottom: 75px;
+        }
+    }
+
+    &__socials{
+        display: flex;
+    }
+
+    &__social{
+        &-link{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: $invert-text-color;
+            fill: $acess-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover{
+                background: $orange-color;
+                fill: $invert-text-color;
+            }
+        }
+        
+        &+.footer__social{
+            margin-left: 15px;
+        }
+    }
+
+    &__info{
+        width: 288px;
+        margin-right: 42px;
+        margin-left: auto;
+
+        &-title{
+            @extend %sub-title;
+            color: $footer-title-color;
+            margin-bottom: 28px;
+        }
+
+        &-text{
+            color: $invert-text-color;
+            font-family: $fira-sans-font;
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 71px;
+        }
+
+        &-tel{
+            font-family: $fira-sans-font;
+            font-size: 24px;
+            line-height: 34px;
+            margin-bottom: 1px;
+            &:hover{
+                color: $invert-text-color;
+            }
+        }
+
+        &-email{
+            color: $invert-text-color;
+            font-family: $fira-sans-font;
+            font-size: 20px;
+            line-height: 28px;
+            &:hover{
+                color: $orange-color;
+            }
+        }
+    }
+
+    &__subscribe{
+        width: 400px;
+
+        &-title{
+            @extend %sub-title;
+            color: $footer-title-color;
+            margin-bottom: 37px;
+        }
+
+        &-acceptance{
+            font-size: 14px;
+            line-height: 20px;
+            color: $invert-text-color;
+            & a{
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+                text-decoration: underline;
+                color: $invert-text-color;
+                &:hover{
+                    color: $orange-color;
+                }
+            }
+        }
+    }
+
+    &__form{
+        margin-bottom: 32px;
+        position: relative;
+
+        &-input{
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            color: $invert-text-color;
+            background: #1A8D7A;
+            padding: 17px 81px 16px 30px;
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 400;
+            &::placeholder{
+                color: $invert-text-color;
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 400;
+            }
+            &:focus{
+                outline: 2px solid $invert-text-color;
+            }
+        }
+
+        &-button{
+            position: absolute;
+            top: 13px;
+            right: 26px;
+            width: 30px;
+            height: 30px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+            fill: $invert-text-color;
+            &:hover{
+                fill: $orange-color;
+            }
+        }
+    }
+
+    &__copyright{
+        font-size: 14px;
+        line-height: 21px;
+        color: $invert-text-color;
+    }
+}
+
+#toTop{
+    position: fixed;
+    z-index: 100;
+    right: 60px;
+    bottom: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: $orange-color;
+    fill: $invert-text-color;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $acess-color;
+    }
+
+    @media(max-width:$tablet){
+        right: 20px;
+        bottom: 20px;
+    }
+    @media(max-width:$mobile){
+        opacity: 0;
+        visibility: hidden;
+    }
+}
