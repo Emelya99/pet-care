@@ -390,7 +390,7 @@ img {
 
 .pet,
 .welcome {
-  background-image: url("../img/welcome-bg.jpg");
+  background-image: url(/img/welcome-bg.jpg);
 }
 .pet__wrapper,
 .welcome__wrapper {
@@ -506,7 +506,7 @@ img {
   height: 50px;
   top: 0;
   left: 0;
-  background-image: url("../img/what-we-do-check.png");
+  background-image: url("/img/what-we-do-check.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -518,7 +518,7 @@ img {
 }
 
 .pet {
-  background-image: url("../img/help-bg.jpg");
+  background-image: url("/img/help-bg.jpg");
 }
 .pet__wrapper {
   max-width: 650px;
@@ -646,7 +646,7 @@ img {
 }
 
 .need-us {
-  background-image: url("../img/need-us-bg.jpg");
+  background-image: url(/img/need-us-bg.jpg);
 }
 .need-us__wrapper {
   color: #FFF;
